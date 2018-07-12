@@ -1,6 +1,6 @@
 /** @jsx React.DOM */
-let API = "https://lsaptpq101.cpr.ca:8443/"
-let DEFAULT_QUERY ="RESTAdapter/tpmr/user/transitmatrix/getTrnsMtrxAllOrigRamps"
+let API = "http://aicams.ca/"
+let DEFAULT_QUERY ="urls?list=1"
 
 var URLlist = React.createClass({
   getInitialState:function(){
