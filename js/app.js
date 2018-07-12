@@ -1,5 +1,5 @@
 /** @jsx React.DOM */
-let API = "http://aicams.ca/"
+let API = "http://aicams.ca:5000/"
 let DEFAULT_QUERY ="urls?list=1"
 
 var URLlist = React.createClass({
