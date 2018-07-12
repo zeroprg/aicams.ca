@@ -14,14 +14,21 @@
     <meta name="description" content="Notify of envents from IP cameras" />
     <meta name="keywords" content="CNN, Python, Artificial Vision" />
     <meta name="author" content="Vitaly Arkhipov" />
-    <!-- Bootstrap -->
     <script src="js/modernizr.custom.js"></script>
+
+     <!-- React -->
+    <script src="https://fb.me/JSXTransformer-0.11.0.js"></script>
+    <script src="https://fb.me/react-0.11.1.js"></script>
+
+
+    <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/jquery.fancybox.css" rel="stylesheet">
     <link href="css/flickity.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
+
     <link href="css/styles.css" rel="stylesheet">
     <link href="css/queries.css" rel="stylesheet">
     <!-- Facebook and Twitter integration -->
@@ -64,12 +71,16 @@
                 </div>
                 <div class="row hero-content">
                     <div class="col-md-12">
+                        <a href=""></a>
+                    </div>
+                    <div class="col-md-12">
                         <h1 class="animated fadeInDown">Artificial Cameras video streams.</h1>
-                        <a href="//aicams.ca:5000" class="btn animated fadeInUp">Run IP Camera example</a>
+                        <div id="app"></div>
+                        <a href="//aicams.ca:5000" class="btn btn-default">Run examples</a>
                         <h3>By specifying IP Address or camera URL you will share your link with all other subscribers. To make this link private your have to subscribe to payable version</h3>
                         <h3>Enter IP Camera url at this box </h3>
-                        <form class="form-horizontal" action="//aicams.ca:5000/url" method="get">
 
+                        <form class="form-horizontal" action="//aicams.ca:5000/urls" method="get">
                             <div class="form-group">
                                 <label class="control-label col-sm-2" for="pwd">URL:</label>
                                 <div class="col-sm-10">
@@ -271,5 +282,6 @@
         }(window, document, 'script', 'ga'));
         ga('create', 'UA-XXXXX-X'); ga('send', 'pageview');
     </script>
+    <script type="text/jsx" src="js/app.js"></script>
 </body>
 </html>
