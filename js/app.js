@@ -55,7 +55,7 @@ var Class = React.createClass({
         return (
             <ul>
                 {data.map(data =>
-                    <li key={data}>
+                    <li key={data[0]}>
                         <a href={data[1]}>{data[1]}</a>
                         &nbsp;
               <a href={this.state.url + data[1]} onClick={this.buttonClick.bind(this)} className="btn btn-primary a-btn - slide - text">
