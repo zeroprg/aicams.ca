@@ -1,8 +1,8 @@
 /** @jsx React.DOM */
 let API = "http://aicams.ca:5000/"
 let DEFAULT_QUERY ="urls?list=1"
-let URL = API + DEFAULT_QUERY + '/urls'
-let deleteURL = URL + '?delete='
+let URL = API + "urls"
+let deleteURL = URL + "?delete="
 var Class = React.createClass({
 
     getInitialState: function () {
