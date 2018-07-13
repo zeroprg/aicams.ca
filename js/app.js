@@ -56,9 +56,9 @@ var Class = React.createClass({
             <ul>
                 {data.map(data =>
                     <li key={data}>
-                        <a href={data}>{data}</a>
+                        <a href={data[1]}>{data[1]}</a>
                         &nbsp;
-              <a href={this.state.url + data} onClick={this.buttonClick.bind(this)} className="btn btn-primary a-btn - slide - text">
+              <a href={this.state.url + data[1]} onClick={this.buttonClick.bind(this)} className="btn btn-primary a-btn - slide - text">
                             <span className="glyphicon glyphicon-remove" aria-hidden="true"></span>
                             <span>
                                 <strong>Delete</strong>
