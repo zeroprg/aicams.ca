@@ -3,7 +3,7 @@ let API = "http://aicams.ca:5000/"
 let DEFAULT_QUERY ="urls?list=1"
 let URL = API + "urls"
 let deleteURL = URL + "?delete="
-var Class = React.createClass({
+var URLlist = React.createClass({
 
     getInitialState: function () {
         return {
@@ -72,4 +72,4 @@ var Class = React.createClass({
 
 })
 
-React.renderComponent(<URLlist/>, document.getElementById('app'));
+React.renderComponent(<URLlist />, document.getElementById('URLlist'));
