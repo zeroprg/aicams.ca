@@ -75,10 +75,48 @@
                     </div>
                     <div class="col-md-12">
                         <h1 class="animated fadeInDown">Artificial Cameras video streams.</h1>
+                        <h3> This is smart cloud storage for security cameras, (bellow public available video-streams) </h3>
                         <div id="URLlist"></div>
                         <a href="//aicams.ca:5000" class="btn btn-default">Run examples</a>
-                        <h3>By specifying IP Address or camera URL you will share your link with all other subscribers. To make this link private your have to subscribe to payable version</h3>
+
+                        <h3>As subscribe you will get additional services:</h3>
+                        <ul>
+                            <li>private access to yours video feeds (max 3 feeds + 4$ for every new additional feed)</li>
+                            <li>notification service by eMail, SMS and Phone about all events on video feeds </li>
+                        </ul>
+                        <div data-ux="Block"
+                             class="x-el x-el-div px_-text-transform-uppercase px_-d-inline-block px_-pt-20px px_-pb-20px px_-ff-_Archivo_Black___arial__sans-serif px_-fs-14 _mdpx_-fs-14 _lgpx_-fs-14 x-d-ux">
+                            <form data-ux="Form" action="https://www.paypal.com/cgi-bin/webscr" method="post"
+                                  class="x-el x-el-form px_-text-transform-uppercase px_-mb-0 px_-ff-_Archivo_Black___arial__sans-serif px_-fs-14 _mdpx_-fs-14 _lgpx_-fs-14 x-d-ux">
+                                <input type="hidden" name="edit_selector" data-aid="EDIT_PANEL_EDIT_PAYMENT_ICON">
+                                <input type="hidden" name="business" value="zeroprg@yahoo.com">
+                                <input type="hidden" name="cmd" value="_xclick">
+                                <input type="hidden" name="item_name" value="1 month + 1 month free subscription for max 3 video streams">
+                                <input type="hidden" name="item_number">
+                                <input type="hidden" name="amount" value="16" data-aid="PAYMENT_HIDDEN_AMOUNT">
+                                <!--<input type="hidden" name="shipping" value="10.00">-->
+                                <input type="hidden" name="currency_code" value="CAD" data-aid="PAYMENT_HIDDEN_CURRENCY">
+                                <input type="hidden" name="rm" value="0">
+                                <input type="hidden" name="return" value="http://aicams.ca">
+                                <input type="hidden" name="cancel_return" value="http://aicams.ca">
+                                <input type="hidden" name="cbt" value="Return to aicams.ca cloud solutions for security cameras.">
+                                <div data-ux="Block" data-route="settings/buyNowButtonLabel">
+                                    Pay for 1 month + 1 month free 16 CAD:
+                                    <button data-ux="Button" name="submit"
+                                            data-aid="PAYMENT_PAYPALBUTTON_RENDERED"
+                                            data-tccl="ux2.PAYMENT.payment1.Form.Default.Button.Default.7076.click,click">
+                                        <img src="https://www.paypalobjects.com/webstatic/icon/pp258.png" data-ux="Image" data-aid="PAYMENT_PAYPALBUTTON_IMAGE_RENDERED"
+                                             width="70" height="50">
+                                    </button>
+                                </div>
+                            </form>
+                            <img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/cc-badges-ppmcvdam.png" data-ux="Image"
+                                 data-aid="PAYMENT_CREDIT_CARD_BADGES_RENDERED" alt="Pay with PayPal or a debit/credit card"
+                                 class="x-el x-el-img px_-text-transform-uppercase px_-max-width-100P px_-ml-0 px_-mr-0 px_-mt-10px px_-mb-0 px_-w-150px px_-h-auto px_-ff-_Archivo_Black___arial__sans-serif px_-fs-14 _mdpx_-fs-14 _lgpx_-fs-14 x-d-ux x-d-aid">
+                        </div>
+
                         <h3>Enter IP Camera url at this box </h3>
+                        <h3><b>Warning:</b> "By specifying IP Address or camera URL bellow you will share your link with all other subscribers. To make this link private your have to subscribe to payable version"</h3>
 
                         <form class="form-horizontal" action="//aicams.ca:5000/urls" method="get">
                             <div class="form-group">
