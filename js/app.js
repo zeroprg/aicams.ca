@@ -67,7 +67,7 @@ var URLlist = React.createClass({
         return (
             <ul>
                 {data.map(data =>
-                    <li key={data['url']}>
+                    <li key={data['cam']}>key={data['cam']}
                         <a href={data['url']}>{data['url']}</a>
                         &nbsp;
                             <a href="#" onClick={() => this.buttonClick(this.state.url+data['url'])} className="btn btn-primary a-btn - slide - text">
