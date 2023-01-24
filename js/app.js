@@ -1,6 +1,6 @@
 
 /** @jsx React.DOM */
-let API = "http://aicams.ca:5000/"
+let API = "http://198.166.220.49:3020/"
 let DEFAULT_QUERY ="urls?list=1"
 let URL = API + "urls"
 let deleteURL = URL + "?delete="
