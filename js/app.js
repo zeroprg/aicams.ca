@@ -67,10 +67,10 @@ var URLlist = React.createClass({
         return (
             <ul>
                 {data.map(data =>
-                    <li key={data[0]}>
-                        <a href={data[1]}>{data[1]}</a>
+                    <li key={data['url']}>
+                        <a href={data['url']}>{data['url']}</a>
                         &nbsp;
-              <a href="#" onClick={() => this.buttonClick(this.state.url+data[1])} className="btn btn-primary a-btn - slide - text">
+                            <a href="#" onClick={() => this.buttonClick(this.state.url+data['url'])} className="btn btn-primary a-btn - slide - text">
                             <span className="glyphicon glyphicon-remove" aria-hidden="true"></span>
                             <span>
                                 <strong>Delete</strong>
